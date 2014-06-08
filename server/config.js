@@ -4,7 +4,7 @@ angular.module('ffffng').factory('config', function (fs, deepExtend) {
     var defaultConfig = {
         server: {
             port: 8080,
-            peersPath: '/tmp/peers'
+            peersPath: '/home/fastdform/fastdpeers'
         },
         client: {
             community: {
