@@ -57,8 +57,8 @@ var defaultConfig = {
         baseUrl: 'http://localhost:8080',
         port: 8080,
 
-        databaseFile: '/tmp/ffffng.sqlite',
-        peersPath: '/tmp/peers',
+        databaseFile: '/home/fastdform/ffffng.sqlite',
+        peersPath: '/home/fastdform/fastdpeers',
 
         logging: {
             directory: '/tmp/logs',
