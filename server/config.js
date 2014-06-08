@@ -8,18 +8,18 @@ angular.module('ffffng').factory('config', function (fs, deepExtend) {
         },
         client: {
             community: {
-                name: 'Freifunk Musterstadt',
-                domain: 'musterstadt.freifunk.net',
-                contactEmail: 'kontakt@musterstadt.freifunk.net'
+                name: 'Freifunk Magdeburg',
+                domain: 'md.freifunk.net',
+                contactEmail: 'kontakt@md.freifunk.net'
             },
             map: {
-                graphUrl: 'http://graph.musterstadt.freifunk.net/graph.html',
-                mapUrl: 'http://graph.musterstadt.freifunk.net/geomap.html'
+                graphUrl: 'http://map.md.freifunk.net/graph.html',
+                mapUrl: 'http://map.md.freifunk.net/geomap.html'
             },
             coordsSelector: {
-                lat: 53.565278,
-                lng: 10.001389,
-                defaultZoom: 10
+                lat: 52.1195724,
+                lng: 11.6291814,
+                defaultZoom: 11
             }
         }
     };
