@@ -4,9 +4,9 @@ var commandLineArgs = require('command-line-args');
 var commandLineUsage = require('command-line-usage');
 
 var commandLineDefs = [
-    { name: 'help', alias: 'h', type: Boolean, description: 'Show this help' },
-    { name: 'config', alias: 'c', type: String, description: 'Location of config.json' },
-    { name: 'version', alias: 'v', type: Boolean, description: 'Show ffffng version' }
+    {name: 'help', alias: 'h', type: Boolean, description: 'Show this help'},
+    {name: 'config', alias: 'c', type: String, description: 'Location of config.json'},
+    {name: 'version', alias: 'v', type: Boolean, description: 'Show ffffng version'}
 ];
 
 var commandLineOptions;
@@ -87,36 +87,25 @@ var defaultConfig = {
                 }
             }
         },
-
         map: {
-            nodesJsonUrl: ['http://map.musterstadt.freifunk.net/nodes.json']
+            nodesJsonUrl: ['http://map.md.freifunk.net/nodes.json']
         }
+
     },
     client: {
         community: {
-            name: 'Freifunk Musterstadt',
-            domain: 'musterstadt.freifunk.net',
-            contactEmail: 'kontakt@musterstadt.freifunk.net',
-            sites: []
-        },
-        legal: {
-            privacyUrl: null,
-            imprintUrl: null
+            name: 'Freifunk Magdeburg',
+            domain: 'md.freifunk.net',
+            contactEmail: 'kontakt@md.freifunk.net'
         },
         map: {
-            mapUrl: 'http://map.musterstadt.freifunk.net'
-        },
-        monitoring: {
-            enabled: false
+            graphUrl: 'http://map.md.freifunk.net/graph.html',
+            mapUrl: 'http://map.md.freifunk.net/geomap.html'
         },
         coordsSelector: {
-            showInfo: false,
-            showBorderForDebugging: false,
-            localCommunityPolygon: [],
-            lat: 53.565278,
-            lng: 10.001389,
-            defaultZoom: 10,
-            layers: {}
+            lat: 52.1195724,
+            lng: 11.6291814,
+            defaultZoom: 11
         }
     }
 };
